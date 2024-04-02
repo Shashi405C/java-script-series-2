@@ -1,0 +1,79 @@
+/* Reset default margin and padding */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles for header and navigation */
+header {
+  background-color: hsl(0, 0%, 20%);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  font-weight: bold;
+}
+
+.nav-right ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-right ul li {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Side navigation styles */
+.sidenav {
+  width: 200px;
+  background-color: #f4f4f4;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  padding-top: 50px;
+}
+
+.sidenav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Active state for navigation items */
+.active {
+  background-color: #ccc;
+}
+
+/* Main content section styles */
+.main {
+  margin-left: 220px; /* Adjusted to accommodate side navigation width */
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.section p {
+  color: #666;
+}
